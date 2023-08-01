@@ -65,20 +65,20 @@ _is_google_update_build = False
 # These values must be changed when customizing open source Omaha.
 # You may also wish to replace the language-neutral constants in the individual
 # *generated_resources_*.rc files with localized strings.
-_FULL_COMPANY_NAME = 'OmahaCompanyName Inc.'
-_SHORT_COMPANY_NAME = 'OmahaCompanyName'
-_PATH_COMPANY_NAME = 'OmahaCompanyName'
+_FULL_COMPANY_NAME = 'Dental Wings Inc.'
+_SHORT_COMPANY_NAME = 'DW'
+_PATH_COMPANY_NAME = 'DentalWings'
 _PRODUCT_NAME = 'Update'
-_COMPANY_DOMAIN_BASE = 'google'
+_COMPANY_DOMAIN_BASE = 'dwos'
 _COMPANY_DOMAIN = _COMPANY_DOMAIN_BASE + '.com'
-_MAIN_EXE_BASE_NAME = 'GoogleUpdate'
+_MAIN_EXE_BASE_NAME = 'DentalWingsUpdate'
 # TODO(omaha): Use this throughout the build files where goopdate and
 # goopdateres are referenced.
 _MAIN_DLL_BASE_NAME = 'goopdate'
 # "Google LLC" must not be removed from the copyright string. This literal also
 # appears as LegalCopyright in the VERSIONINFO section of .rc files.
 # TODO(omaha): Use this variable in .wxs files, etc.
-_OMAHA_COPYRIGHT_STRING_ENGLISH = 'Copyright 2018 Google LLC'
+_OMAHA_COPYRIGHT_STRING_ENGLISH = 'Copyright 2023 Dental Wings Inc.'
 
 
 # TODO(omaha): Allow open source Omaha to be built without the Recovery MSI,
@@ -305,11 +305,11 @@ if win_env.Bit('build_three_versions'):
 if not win_env.Bit('build_server'):
   win_env.Replace(
     CERTIFICATE_HASH='',
-    CERTIFICATE_PASSWORD=GetOption('authenticode_password'),
+    CERTIFICATE_PASSWORD=Literal(GetOption('authenticode_password')),
     CERTIFICATE_PATH=GetOption('authenticode_file'),
     SHA2_CERTIFICATE_HASH='',
     SHA2_CERTIFICATE_ISSUER='',
-    SHA2_CERTIFICATE_PASSWORD=GetOption('sha2_authenticode_password'),
+    SHA2_CERTIFICATE_PASSWORD=Literal(GetOption('sha2_authenticode_password')),
     SHA2_CERTIFICATE_PATH=GetOption('sha2_authenticode_file'),
   )
 

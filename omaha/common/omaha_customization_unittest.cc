@@ -129,8 +129,8 @@ TEST(OmahaCustomizationTest, Constants_Certificate) {
 
 TEST(OmahaCustomizationTest, Constants_OmahaAppId_String) {
 #ifdef GOOGLE_UPDATE_BUILD
-  EXPECT_STREQ(_T("{430FD4D0-B729-4F61-AA34-91526481799D}"), GOOPDATE_APP_ID);
-  EXPECT_STREQ(_T("{430FD4D0-B729-4F61-AA34-91526481799D}"),
+  EXPECT_STREQ(_T("{DD13223F-AC0E-436E-B20D-85F7371A555D}"), GOOPDATE_APP_ID);
+  EXPECT_STREQ(_T("{DD13223F-AC0E-436E-B20D-85F7371A555D}"),
                kGoogleUpdateAppId);
 #endif
 }
@@ -141,7 +141,7 @@ TEST(OmahaCustomizationTest, Constants_OmahaAppId_GUID) {
       {0x430FD4D0, 0xB729, 0x4F61,
        {0xAA, 0x34, 0x91, 0x52, 0x64, 0x81, 0x79, 0x9D}};
   EXPECT_TRUE(::IsEqualGUID(kExpectedGoogleUpdateGuid, kGoopdateGuid));
-  EXPECT_STREQ(_T("{430FD4D0-B729-4F61-AA34-91526481799D}"),
+  EXPECT_STREQ(_T("{DD13223F-AC0E-436E-B20D-85F7371A555D}"),
                GuidToString(kGoopdateGuid));
 #endif
 }
