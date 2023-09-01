@@ -50,7 +50,7 @@ EtwLogWriter* EtwLogWriter::Create() {
 }
 
 bool EtwLogWriter::WantsToLogRegardless() const {
-  return session_handle() != 0;
+  return true; // session_handle() != 0;
 }
 
 bool EtwLogWriter::IsCatLevelEnabled(LogCategory category,

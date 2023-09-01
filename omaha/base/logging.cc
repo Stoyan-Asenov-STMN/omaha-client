@@ -945,7 +945,9 @@ LogWriter::~LogWriter() {
 
 void LogWriter::Cleanup() {}
 
-bool LogWriter::WantsToLogRegardless() const { return false; }
+bool LogWriter::WantsToLogRegardless() const { 
+  return true; // false; 
+}
 
 bool LogWriter::IsCatLevelEnabled(LogCategory, LogLevel) const {
   return false;
@@ -1393,7 +1395,7 @@ void OverrideConfigLogWriter::Cleanup() {
 }
 
 bool OverrideConfigLogWriter::WantsToLogRegardless() const {
-  return force_logging_enabled_;
+  return true; // force_logging_enabled_;
 }
 
 bool OverrideConfigLogWriter::IsCatLevelEnabled(LogCategory category,
