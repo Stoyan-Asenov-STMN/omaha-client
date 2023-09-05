@@ -40,7 +40,7 @@ Finally, we have a few directories that are filled with tools for generating ins
 omaha\
         enterprise\             Produces GoogleUpdate.adm, an optional file that can be used 
                                 by system administrators to manage Omaha via Group Policy.
-        installers\             Produces GoogleUpdateSetup.exe, the meta-installer, using a
+        installers\             Produces DentalWingsUpdateSetup.exe, the meta-installer, using a
                                 set of Python scripts to generate the Omaha tarball and merging
                                 it with mi_exe_stub.exe.  (This build step also produces some
                                 of the Code Red files.)

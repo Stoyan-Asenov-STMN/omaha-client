@@ -133,7 +133,7 @@ const TCHAR* const kPSFileNameUser     = _T("psuser.dll");
 const TCHAR* const kPSFileNameUser64   = _T("psuser_64.dll");
 
 // TODO(omaha): Replace the following literal in clickonce\build.scons.
-// '%s/GoogleUpdateSetup.exe'
+// '%s/DentalWingsUpdateSetup.exe'
 
 const TCHAR* const kLegacyHelperInstallerGuid =
     _T("{A92DAB39-4E2C-4304-9AB6-BC44E68B55E2}");

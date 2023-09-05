@@ -1504,6 +1504,7 @@ HRESULT EnableSEHOP(bool enable) {
   SafeCStringFormat(&omaha_ifeo_key_path, _T("%s\\%s"),
                     kRegKeyImageFileExecutionOptions,
                     kOmahaShellFileName);
+  
   return enable ?
       RegKey::SetValue(omaha_ifeo_key_path, kRegKeyDisableSEHOPValue,
                        static_cast<DWORD>(0)) :

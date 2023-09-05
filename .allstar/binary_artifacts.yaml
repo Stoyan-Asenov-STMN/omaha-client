@@ -32,7 +32,7 @@ ignorePaths:
 - omaha/testing/unittest_support/chrome_setup.exe
 - omaha/testing/unittest_support/download_cache_test/{7101D597-3481-4971-AD23-455542964072}/livelysetup.exe
 - omaha/testing/unittest_support/download_cache_test/{89640431-FE64-4da8-9860-1A1085A60E13}/gears-win32-opt.msi
-- omaha/testing/unittest_support/download_cache_test/{C5CC8735-9BE0-45c5-804C-F117E96047C7}/GoogleUpdateSetup.exe
+- omaha/testing/unittest_support/download_cache_test/{C5CC8735-9BE0-45c5-804C-F117E96047C7}/DentalWingsUpdateSetup.exe
 - omaha/testing/unittest_support/old_google_certificate.dll
 - omaha/testing/unittest_support/omaha_1.0.x/GoogleUpdate.exe
 - omaha/testing/unittest_support/omaha_1.0.x/goopdate.dll

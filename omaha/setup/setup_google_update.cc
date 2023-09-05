@@ -680,7 +680,6 @@ void SetupGoogleUpdate::Uninstall() {
 // Also deletes the main Google Update key if there is nothing in it.
 HRESULT SetupGoogleUpdate::DeleteRegistryKeys() {
   OPT_LOG(L3, (_T("[SetupGoogleUpdate::DeleteRegistryKeys]")));
-
   if (is_machine_) {
     VERIFY_SUCCEEDED(goopdate_utils::EnableSEHOP(false));
   }
