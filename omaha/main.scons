@@ -65,7 +65,7 @@ _is_google_update_build = False
 # These values must be changed when customizing open source Omaha.
 # You may also wish to replace the language-neutral constants in the individual
 # *generated_resources_*.rc files with localized strings.
-_FULL_COMPANY_NAME = 'StraumannGroup Inc.'
+_FULL_COMPANY_NAME = 'Straumann Group Inc.'
 _SHORT_COMPANY_NAME = 'Straumann'
 _PRODUCT_NAME = 'StraumannUpdate'
 _COMPANY_DOMAIN_BASE = 'dwos'
